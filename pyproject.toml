@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "urp-ws-proxy"
+version = "0.1.0"
+description = "A websocket proxy for interpreting UNO Remote Protocol (presumably transmitted between COOLWSD and a client of your choice)"
+authors = ["Skyler Grey <skyler.grey@collabora.com>"]
+license = "AGPL"
+readme = "README.md"
+packages = [{include = "urp_ws_proxy"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+websockets = "^11.0.3"
+bitstream = "^2.6.0.2"
+numpy = "^1.25.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
